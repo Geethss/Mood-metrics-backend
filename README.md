@@ -53,8 +53,10 @@ uvicorn app.main:app --reload
 2. Open your browser and navigate to:
 
 Swagger UI: http://127.0.0.1:8000/docs
+
 Redoc: http://127.0.0.1:8000/redoc
 
+----
 ### Endpoints
 
 ### /analyze - POST
@@ -68,36 +70,7 @@ File: CSV file with a text column.
 Summary of sentiments.
 Detailed results including sentiment scores and categories.
 
-### Example Response
-
-{
-  "summary": {
-    "total_entries": 3,
-    "positive_count": 1,
-    "negative_count": 2,
-    "neutral_count": 0
-  },
-  "details": [
-    {
-      "id": 1,
-      "text": "I love the new features of this product!",
-      "sentiment": "positive",
-      "sentiment_score": 0.6696
-    },
-    {
-      "id": 2,
-      "text": "The service was okay, nothing special.",
-      "sentiment": "negative",
-      "sentiment_score": -0.092
-    },
-    {
-      "id": 3,
-      "text": "I am not happy with the recent changes.",
-      "sentiment": "negative",
-      "sentiment_score": -0.4585
-    }
-  ]
-}
+---
 
 ## Deployment
 The backend is deployed on Render.
@@ -111,11 +84,13 @@ The backend is deployed on Render.
 - Connect your GitHub repository.
 - Set the build command: pip install -r requirements.txt
 - Set the start command: uvicorn app.main:app --host 0.0.0.0 --port 8000
+  
+---
 
 ### Contributing
 Contributions are welcome! To contribute:
 
-1.Fork the repository.
+1. Fork the repository.
 2. Create a feature branch (git checkout -b feature-name).
 3. Commit your changes (git commit -m "Add new feature").
 4. Push to the branch (git push origin feature-name).

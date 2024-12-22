@@ -36,7 +36,6 @@ Follow these steps to set up the backend locally:
 
 ### Clone the Repository
 
-```bash
 git clone https://github.com/Geethss/Mood-metrics-backend.git
 cd Mood-metrics-backend
 
@@ -56,7 +55,7 @@ uvicorn app.main:app --reload
 Swagger UI: http://127.0.0.1:8000/docs
 Redoc: http://127.0.0.1:8000/redoc
 
-## Endpoints
+### Endpoints
 
 ### /analyze - POST
 Uploads a CSV file and performs sentiment analysis.
@@ -69,7 +68,7 @@ File: CSV file with a text column.
 Summary of sentiments.
 Detailed results including sentiment scores and categories.
 
-###Example Response
+### Example Response
 
 {
   "summary": {
@@ -124,3 +123,4 @@ Contributions are welcome! To contribute:
 
 ### License
 This project is licensed under the MIT License.
+
